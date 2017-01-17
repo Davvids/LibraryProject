@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="njpo.dawidkupny.library.controller.AddBookController">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <HBox prefHeight="80.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="titleField" prefHeight="35.0" promptText="Podaj Tytuł" HBox.hgrow="ALWAYS" />
+                  <TextField fx:id="publisherField" prefHeight="35.0" promptText="Podaj Nazwę Wydawcy" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <HBox prefHeight="80.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="authorField" prefHeight="35.0" promptText="Podaj Autora" HBox.hgrow="ALWAYS" />
+                  <TextField fx:id="yearField" prefHeight="35.0" promptText="Podaj Rok Wydania" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <HBox prefHeight="80.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="isbnField" prefHeight="35.0" promptText="Podaj nr ISBN" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER">
+               <children>
+                  <Button fx:id="addButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefWidth="100.0" text="Dodaj" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="quitButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefWidth="100.0" text="Wyjście" HBox.hgrow="ALWAYS">
+              		<font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <Label fx:id="messageAddBookButton" alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" prefHeight="40.0" prefWidth="300.0" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Label alignment="CENTER" layoutX="225.0" layoutY="20.0" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="150.0" text="Dodawanie Książki">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

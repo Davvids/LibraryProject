@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="njpo.dawidkupny.library.controller.MainPaneController">
+   <children>
+      <HBox layoutX="67.0" layoutY="100.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="400.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox>
+                     <children>
+                        <Label alignment="CENTER" prefHeight="25.0" prefWidth="499.0" text="Rok" textAlignment="CENTER" HBox.hgrow="ALWAYS">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="25.0" prefWidth="499.0" text="Tytuł" textAlignment="CENTER" HBox.hgrow="ALWAYS">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="25.0" prefWidth="499.0" text="Wydawca" textAlignment="CENTER" HBox.hgrow="ALWAYS">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="25.0" prefWidth="499.0" text="Autor" textAlignment="CENTER" HBox.hgrow="ALWAYS">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="25.0" prefWidth="499.0" text="ISBN" textAlignment="CENTER" HBox.hgrow="ALWAYS">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <TextArea fx:id="libraryTextArea" editable="false" prefHeight="300.0" prefWidth="450.0" VBox.vgrow="ALWAYS" />
+               </children>
+            </VBox>
+            <VBox prefHeight="100.0" prefWidth="150.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <TextField fx:id="searchField" prefHeight="30.0" promptText="Podaj tytuł" VBox.vgrow="ALWAYS" />
+                  <Button fx:id="searchButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="35.0" text="Szukaj">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="borrowField" prefHeight="30.0" promptText="Podaj tytuł do wypożyczenia lub zwrotu" />
+                  <Button fx:id="borrowButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="35.0" text="Wypożycz książkę" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="giveBackButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="35.0" text="Zwróć książkę">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="addBookButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="35.0" text="Dodaj książkę" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="refreshButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="35.0" text="Odśwież listę">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Label maxWidth="1.7976931348623157E308" prefHeight="25.0" text="Lista wypożyczonych książek:" />
+                  <TextArea fx:id="borrowedTextArea" editable="false" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Label alignment="CENTER" layoutX="357.0" layoutY="7.0" prefHeight="30.0" prefWidth="286.0" text="Biblioteka">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
